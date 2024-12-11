@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20231103/pngtree-rustic-wood-texture-abstract-background-in-havana-image_13756193.png');
+            background-size: fill;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #ffc107;
+        }
+        .navbar.fixed-top {
+            z-index: 1030;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .recipe-title {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .category-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        a {
+            user-select: none; /* Disables text selection */
+            text-decoration: underline;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Booklet Appetites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sources.html">Sources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="submit_recipe.html">Submit Recipe</a></li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container mt-5 pt-5 text-center">
+        <h1 id="home">Welcome to Booklet Appetites</h1>
+        <p>Discover delicious recipes from the three selected countries!<br>Ranging from Philippines, India, and China!</p>
+        <div class="mt-3">
+            <img src="https://th.bing.com/th/id/OIP.hHWrFKYn3Z5ImdG_kM-X4QHaE8?rs=1&pid=ImgDetMain" alt="Kare-Kare" class="img-fluid rounded"> <br>
+            <a class="mt-2" href="dinner1.html">Enjoy a taste of the Philippines signature dish!</a>
+        </div>
+    </div>
+
+    <!-- Recipe Categories Section -->
+    <div id="categories" class="container mt-5">
+        <h2 class="text-center">Recipe Categories</h2>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <a href="#breakfast" class="btn btn-warning btn-lg w-100">Breakfast</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#lunch" class="btn btn-warning btn-lg w-100">Lunch</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#dinner" class="btn btn-warning btn-lg w-100">Dinner</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#dessert" class="btn btn-warning btn-lg w-100">Dessert</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br> <p>intentional spacing</p>   <br>    <br><br><br>   <br> <br>    <br>    <br>
+
+    <div id="breakfast" class="category-section">
+        <div class="container text-center">
+            <h2>Breakfast Recipes</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://panlasangpinoy.com/wp-content/uploads/2014/12/Tapsilog-Recipe-1.jpg" class="card-img-top" alt="Breakfast 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Filipino Tapsilog</h5>
+                            <a href="breakfast1.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.XSCo5S6kP3o-7-jVqH4vGgHaE8?w=3680&h=2456&rs=1&pid=ImgDetMain" class="card-img-top" alt="Breakfast 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Indian Masala Dosa</h5>
+                            <a href="breakfast2.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://www.thespruceeats.com/thmb/AnJONheVyKxdi9ZL0JcbQrB6bXc=/3936x2624/filters:no_upscale():max_bytes(150000):strip_icc()/1.Method1basic-congee-recipes-4065244_Final-5b9fa3aa46e0fb0025fe5272.jpg" class="card-img-top" alt="Breakfast 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Chinese Rice Porridge</h5>
+                            <a href="breakfast3.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lunch" class="category-section">
+        <div class="container text-center">
+            <h2>Lunch Recipes</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://cafedelites.com/wp-content/uploads/2016/09/Teriyaki-Chicken-Thighs-8-1-800x800.jpg" class="card-img-top" alt="Lunch 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Adobo</h5>
+                            <a href="lunch1.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://ms-fox.pl/wp-content/uploads/2019/11/butter-chicken-1.jpg" class="card-img-top" alt="Lunch 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Butter Chicken</h5>
+                            <a href="lunch2.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.btf5BAkx8_Oy2MlEky93KQHaE8?w=1600&h=1067&rs=1&pid=ImgDetMain" class="card-img-top" alt="Lunch 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kung Pao Chicken</h5>
+                            <a href="lunch3.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dinner" class="category-section">
+        <div class="container text-center">
+            <h2>Dinner Recipes</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://www.hungryhuy.com/wp-content/uploads/kare-kare-recipe-closeup.jpg" class="card-img-top" alt="Dinner 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Kare-Kare</h5>
+                            <a href="dinner1.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://www.indianveggiedelight.com/wp-content/uploads/2017/10/palak-paneer-recipe-featured.jpg" class="card-img-top" alt="Dinner 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Dinner 2</h5>
+                            <a href="dinner2.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://healthyfitnessmeals.com/wp-content/uploads/2022/03/Beef-and-broccoli-stir-fry-7.jpg" class="card-img-top" alt="Dinner 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Beef and Broccoli Stir-Fry</h5>
+                            <a href="dinner3.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dessert" class="category-section">
+        <div class="container text-center">
+            <h2>Dessert Recipes</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="dessert1.jpg" class="card-img-top" alt="Dessert 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessert 1</h5>
+                            <a href="error.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="dessert2.jpg" class="card-img-top" alt="Dessert 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessert 2</h5>
+                            <a href="error.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="dessert3.jpg" class="card-img-top" alt="Dessert 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessert 3</h5>
+                            <a href="error.html" class="btn btn-warning">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
